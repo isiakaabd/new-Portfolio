@@ -1,3 +1,5 @@
+    @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap');
     * {
         margin: 0;
         box-sizing: border-box;
@@ -94,6 +96,7 @@
         color: white;
         width: 600px;
         margin: auto;
+        font-family: 'Fredoka One', cursive;
         padding-top: 5px;
         text-align: center;
         font-weight: 800px;
@@ -105,7 +108,7 @@
         text-align: center;
         font-size: 15px;
         padding: 5px 10px;
-        font-family: monospace;
+        font-family: 'Lobster Two', cursive;
     }
     
     main article h5 a {
@@ -124,17 +127,20 @@
     aside {
         width: 95%;
         margin-top: 30px;
+        display: flex;
     }
     
     aside img {
-        float: left;
+        /* float: left; */
         border-radius: 50%;
+        width: 300px;
+        height: 300px;
         /* max-width: 40%; */
-        /* margin-right: 10px; */
+        margin-right: 20px;
     }
     
     section aside p {
-        float: right;
+        /* float: right; */
         width: 70%;
         text-align: justify;
         color: white!important;
@@ -157,6 +163,18 @@
         padding: 10px 0;
         font-weight: bolder;
         background: linear-gradient(45deg, mediumaquamarine, lightblue, mediumaquamarine);
+    }
+    
+    @media(max-width: 320) {
+        main {
+            display: block;
+            width: 75%;
+        }
+        aside p {
+            width: 70%;
+            font-size: 12px;
+            word-spacing: 0%;
+        }
     }
     
     footer {
