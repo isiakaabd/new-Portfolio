@@ -1,5 +1,6 @@
     @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
     * {
         margin: 0;
         box-sizing: border-box;
@@ -178,6 +179,84 @@
         }
     }
     
+    .project-container h3 {
+        padding-top: 12px;
+        text-align: center;
+        font-size: 24px;
+        padding: 10px;
+        border: solid 3px #fff;
+        width: 250px;
+        left: 100px;
+        position: relative;
+        border-radius: 5px;
+        color: blue;
+    }
+    
+    .project-container h3 {
+        animation-name: animate-project;
+        animation-duration: 5s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+    }
+    
+    @keyframes animate-project {
+        0% {
+            left: 0px;
+            background: red;
+            border-radius: red
+        }
+        25% {
+            left: 15px;
+            background: burlywood;
+            border-radius: burlywood;
+            transform: scale(0.5);
+        }
+        100% {
+            left: 30px;
+            background: yellow;
+            border-radius: yellow;
+        }
+    }
+    /* project  */
+    
+    section .project-container {
+        background: linear-gradient(40deg, #100043, burlywood)
+    }
+    
+    .project-sub-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .signup-form {
+        width: 300px;
+        margin: 20px auto;
+    }
+    
+    .signup-form p {
+        text-align: center!important;
+    }
+    
+    .signup-form p a {
+        text-decoration: none;
+        color: blue;
+        font-weight: bold;
+        font-size: 20px;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+    
+    p a:hover {
+        opacity: 1;
+        color: thistle;
+    }
+    
+    iframe {
+        height: 450px;
+    }
+    /* footer */
+    
     footer {
         background-color: burlywood;
     }
@@ -198,6 +277,8 @@
         font-weight: bolder;
         max-width: 300px;
         margin: auto;
+        transition: all 3s ease-in;
+        transform: scale(1.5);
     }
     
     footer .sub-container h3 {
