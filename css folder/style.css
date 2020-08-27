@@ -167,20 +167,40 @@
         word-spacing: 2px;
     }
     
-    section h3 {
-        text-align: center;
+    #main-container {
+        height: 100px;
+        background: inherit;
         border: 3px double lime;
         border-color: blueviolet;
         border-radius: 5px;
-        /* font-size: 14px; */
-        margin: auto;
+        color: #fff;
+    }
+    
+    #main-container h3 {
+        text-align: center!important;
+        color: #fff;
+        padding: 12px;
+    }
+    
+    .skills-container {
+        display: flex;
+        justify-items: center;
+    }
+    
+    .skills i {
+        height: 30%;
+    }
+    
+    .skills {
+        display: flex;
         padding: 10px 0;
         font-weight: bolder;
         line-height: 1.9;
-        background: linear-gradient(45deg, khaki, blue, blueviolet, 0.3);
+        width: 50%;
+        margin: auto 20px;
     }
     
-    @media(max-width: 320) {
+    @media(max-width: 320px) {
         main {
             display: block;
             width: 75%;
@@ -199,7 +219,8 @@
         padding: 30px;
         border: solid 3px #fff;
         width: 250px;
-        left: 100px;
+        /* left: 100px !important; */
+        /* margin: auto; */
         position: relative;
         border-radius: 5px;
         color: blue;
@@ -207,7 +228,7 @@
     
     .project-container h3 {
         animation-name: animate-project;
-        animation-duration: 5s;
+        animation-duration: 8s;
         animation-timing-function: ease-in-out;
         animation-fill-mode: forwards;
         animation-iteration-count: infinite;
@@ -215,18 +236,18 @@
     
     @keyframes animate-project {
         0% {
-            left: 0px;
+            left: 200px;
             background: red;
             border-radius: red
         }
         25% {
-            left: 15px;
+            left: 450px;
             background: burlywood;
             border-radius: burlywood;
             transform: scale(0.5);
         }
         100% {
-            left: 30px;
+            left: 650px;
             background: yellow;
             border-radius: yellow;
         }
