@@ -4,7 +4,7 @@
     * {
         margin: 0;
         box-sizing: border-box;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: 'Lucida Sans Regular', Arial, Helvetica, sans-serif;
         padding: 0;
         scroll-behavior: smooth;
     }
@@ -170,14 +170,14 @@
     section h3 {
         text-align: center;
         border: 3px double lime;
-        border-color: lime;
+        border-color: blueviolet;
         border-radius: 5px;
-        width: 350px;
         /* font-size: 14px; */
         margin: auto;
         padding: 10px 0;
         font-weight: bolder;
-        background: linear-gradient(45deg, mediumaquamarine, lightblue, mediumaquamarine);
+        line-height: 1.9;
+        background: linear-gradient(45deg, khaki, blue, blueviolet, 0.3);
     }
     
     @media(max-width: 320) {
@@ -196,7 +196,7 @@
         padding-top: 12px;
         text-align: center;
         font-size: 24px;
-        padding: 10px;
+        padding: 30px;
         border: solid 3px #fff;
         width: 250px;
         left: 100px;
