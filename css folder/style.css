@@ -11,7 +11,7 @@
             }
             
             header {
-                height: 6.5rem;
+                height: 3.5rem;
                 z-index: 100;
             }
             /* navigation bar */
@@ -104,7 +104,7 @@
                 background: url(../images/image1.jpg) no-repeat center center/cover;
                 background-blend-mode: multiply;
                 opacity: 0.9;
-                z-index: -1;
+                z-index: -2;
             }
             
             .sub-intro {
@@ -114,7 +114,7 @@
             }
             
             span {
-                color: blue;
+                color: #ffff;
                 font-family: 'Lobster', cursive;
             }
             
@@ -151,6 +151,16 @@
                 color: khaki;
                 opacity: 0.9;
                 transition: all 1s ease-in-out;
+            }
+            
+            @media (max-width: 320px) {
+                .intro {
+                    height: 150vh;
+                    display: flex;
+                    justify-content: center;
+                    text-align: center;
+                    align-items: center;
+                }
             }
             /* main section */
             
@@ -201,6 +211,21 @@
                 padding: 12px;
                 font-size: 2rem;
                 margin-bottom: 20px;
+            }
+            
+            @media(max-width:320px) {
+                #section {
+                    width: 100%;
+                }
+                #about {
+                    width: 100%;
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                }
+                .image {
+                    width: 50%;
+                }
             }
             /* article p {
         
@@ -281,7 +306,7 @@
                 background: linear-gradient(30deg, royalblue, royalblue);
                 text-align: center;
                 font-size: 1.6rem;
-                padding: 3rem 1.5rem;
+                padding: 2rem 1.5rem;
                 color: #fff;
                 border-radius: 5px;
                 z-index: -1;
@@ -289,18 +314,22 @@
             
             .testimonial-container {
                 display: flex;
-                flex-wrap: wrap;
-                align-self: flex-end;
+                flex-wrap: nowrap;
+                height: 700px;
+                justify-content: space-evenly;
+                align-items: flex-start;
+                align-self: center;
             }
             
             .testimonial-heading {
                 /* position: absolute; */
-                width: 280px;
-                margin: 2rem auto;
+                width: 380px;
+                margin: 2.5rem 1rem;
                 background: steelblue;
                 border: 1px solid steelblue;
                 border-radius: 1rem;
                 padding: 2rem;
+                height: 650px;
                 box-shadow: 0 2.8px 2.2px blue, steelblue;
             }
             
@@ -316,8 +345,9 @@
             .test-msg {
                 display: flex;
                 align-content: flex-end;
-                text-align: center;
+                text-align: left;
                 flex-basis: 50%;
+                padding-bottom: 10px;
                 /* position: relative; */
             }
             /* .test-msg::after {
@@ -576,4 +606,12 @@
             form .submit-btn:hover {
                 transform: scale(1.2);
                 color: red
+            }
+            
+            @media (max-width: 320px) {
+                header {
+                    height: 30px;
+                    font-size: .2rem;
+                    width: max-content;
+                }
             }
