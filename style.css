@@ -620,7 +620,7 @@ form .submit-btn:hover {
         overflow: hidden;
         border-right: .15em solid var(--primary-color);
         font-size: 2rem;
-        width: 70%;
+        width: 63%;
         word-break: break-all;
         word-wrap: wrap;
     }
