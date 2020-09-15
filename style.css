@@ -365,20 +365,6 @@ section h6,
     /* position: relative; */
 }
 
-
-/* .test-msg::after {
-        content: '';
-        position: absolute;
-        left: 0;
-        right: 0;
-        padding: 100% 100% 0 0;
-        background: red;
-        color: red;
-        border-radius: 50%;
-        opacity: 0.5;
-        z-index: 1;
-    } */
-
 .test-msg span:first-child {
     font-size: 1rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -628,6 +614,15 @@ form .submit-btn:hover {
         display: block;
         padding: 6px;
         overflow: hidden;
+    }
+    /* typewriter effect */
+    .sub-intro p {
+        overflow: hidden;
+        border-right: .15em solid var(--primary-color);
+        font-size: 2rem;
+        width: 70%;
+        word-break: break-all;
+        word-wrap: wrap;
     }
     /* landing page  */
     .intro {
