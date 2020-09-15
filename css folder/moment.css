@@ -4,6 +4,7 @@
     font-family: 'Lucida Sans Regular', Arial, Helvetica, sans-serif;
     padding: 0;
     scroll-behavior: smooth;
+    display: none;
 }
 
 header {
@@ -102,9 +103,12 @@ nav ul li a:hover {
     margin-bottom: 20px;
 }
 
+.moment {}
+
 #moment {
     background: black;
     z-index: -1;
+    display: none;
 }
 
 #moment .moment_image {
@@ -154,6 +158,7 @@ footer .sub-container h3 {
 
 footer {
     background-color: black;
+    display: none;
 }
 
 footer .sub-container {
