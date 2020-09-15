@@ -280,47 +280,6 @@ section h6,
 }
 
 
-/* article p {
-        
-        font-size: 3rem;
-        color: white;
-        width: 600px;
-        margin: auto;
-        font-family: 'Fredoka One', cursive;
-        padding-top: 5px;
-        text-align: center;
-        font-weight: 800px;
-        line-height: 1.5em;
-    }
-    
-    main article h5 {
-        color: #ffccaa;
-        text-align: center;
-        font-size: 15px;
-        padding: 5px 10px;
-        font-family: 'Lobster Two', cursive;
-    }
-    
-    main article h5 a {
-        text-decoration: none;
-        color: white;
-        font-size: 15px;
-    }
-    
-    main article h5 a:hover,
-    section aside p a:hover {
-        color: red;
-        transform: scale(1.1); 
-    }
- image is an inline element, if you wish to center it, make sure your display is in block 
-    
-    aside {
-        width: 95%;
-        margin-top: 30px;
-        display: flex;
-    }*/
-
-
 /* moment */
 
 #main-container {
@@ -340,7 +299,6 @@ section h6,
 .skills-container .skills i {
     height: 40%;
     flex: 1;
-    /* border: var(--primary-color) 3px solid; */
 }
 
 .skills {
@@ -589,10 +547,12 @@ footer .contact ul li {
     height: 50px;
     border-radius: 50%;
     padding: 14px;
+    background-color: var(--primary-color);
+    margin-left: .4rem;
 }
 
 .contact ul li img:hover {
-    transform: scale(1.7);
+    transform: scale(1.2);
 }
 
 footer p {
