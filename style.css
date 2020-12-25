@@ -176,11 +176,12 @@
     
     .image {
         width: 30%;
+        align-self: center;
         justify-content: center;
     }
     
     .image img {
-        max-width: 300px;
+        width: 300px;
         height: 300px;
         border-radius: 50%;
         border: var(--primary-color) 3px solid;
@@ -316,8 +317,8 @@
    
     
     .signup-form {
-        height: 300px;
-        margin: 50px auto;
+        height: inherit;
+        margin: 20px auto;
     } 
     
     .signup-form p {
